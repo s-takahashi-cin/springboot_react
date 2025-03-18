@@ -1,0 +1,111 @@
+body {
+  background-color: #444444;
+  color: white;
+}
+
+.content-container {
+  display: flex;
+  margin-left: 350px;
+  flex-direction: column;
+  align-items: start;
+}
+
+.content-title {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.check-box {
+  margin-right: 10px;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content-button {
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  background-color: #333;
+  color: gray;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* 中央に配置 */
+}
+
+.confirm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* モーダルを他の要素の上に表示するためのスタイル */
+}
+
+.confirm-modal-content {
+  background-color: #444444;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.confirm-modal-button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.confirm-modal-button.cancel {
+  background-color: grey;
+  color: white;
+}
+
+.confirm-modal-button:hover {
+  opacity: 0.8;
+}
+
+.confirm-modal-button.cancel:hover {
+  background-color: darkgrey;
+}
+
+.home-bottom {
+  position: fixed;
+  bottom: 20px;
+  left: 60%;
+  text-decoration: none;
+  color: #333;
+}
+
+.home-bottom:hover {
+  color: #ccc;
+}
+
+.input-content {
+  background-color: #4444;
+  width: 300px;
+  padding: 5px;
+  color: white;
+}
+
+.input-content-close {
+  background-color: #444;
+  border: none;
+  font-size: 20px;
+  margin-left: 5px;
+}

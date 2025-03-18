@@ -1,0 +1,186 @@
+.navigation {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  background-color: #333;
+  padding: 20px;
+}
+
+.web-title {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-title {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.add-title-button {
+  background-color: #333;
+  border: none;
+  font-size: 30px;
+  color: #777777;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  bottom: 0;
+  width: 235px;
+}
+
+.footer button {
+  font-size: 13px;
+  color: #ccc;
+  border: none;
+  background-color: #333;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list {
+  cursor: pointer;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.todo-list:hover {
+  color: white;
+}
+
+.title {
+  display: inline-block;
+}
+
+.edit-button {
+  color: #555555;
+  cursor: pointer;
+}
+
+.show-edit-button {
+  cursor: pointer;
+}
+
+.title-edit-input {
+  background-color: #444444;
+  color: #999;
+  outline: none;
+
+  padding: 3px;
+}
+
+.save-button {
+  background-color: #333;
+  color: #555555;
+  border: none;
+  cursor: pointer;
+}
+
+.title-delete-button {
+  background-color: #333;
+  color: #555555;
+  border: none;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #333333;
+  padding: 20px;
+  color: #777777;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.confirm-button,
+.cancel-button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #777777;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #777777;
+  color: white;
+}
+
+.add-title-container {
+  margin-top: 10px;
+}
+
+.title-input {
+  background-color: #444444;
+  color: white;
+  padding: 5px;
+  width: 97%;
+  outline: none;
+  cursor: pointer;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-button {
+  background-color: #222;
+  border: none;
+  border-radius: 3px;
+  color: #777777;
+  cursor: pointer;
+}
+
+.close-button {
+  background-color: #333;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.bar-container {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
