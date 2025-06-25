@@ -14,6 +14,8 @@ function Contents() {
   const [contentToDelete, setContentToDelete] = useState(null);
 
   useEffect(() => {
+    console.log("titleId:", titleId);
+
     if (titleId) {
       fetch(`http://localhost:8080/api/list?title_id=${titleId}`, {
         method: "GET",

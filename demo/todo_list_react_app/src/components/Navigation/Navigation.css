@@ -3,6 +3,7 @@
   left: 0;
   top: 0;
   height: 100%;
+  width: 230px;
   display: flex;
   flex-direction: column;
   text-align: start;
@@ -37,7 +38,7 @@
   position: fixed;
   justify-content: space-between;
   bottom: 0;
-  width: 235px;
+  width: 220px;
 }
 
 .footer button {
@@ -84,7 +85,7 @@
 
 .title-edit-input {
   background-color: #444444;
-  color: #999;
+  color: white;
   outline: none;
 
   padding: 3px;
@@ -158,29 +159,7 @@
   cursor: pointer;
 }
 
-.button-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.add-button {
-  background-color: #222;
-  border: none;
-  border-radius: 3px;
-  color: #777777;
-  cursor: pointer;
-}
-
-.close-button {
-  background-color: #333;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
-}
-
 .bar-container {
   display: flex;
   margin-top: 20px;
-  justify-content: space-between;
 }

@@ -1,0 +1,47 @@
+.add-title-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+.category-select {
+  background-color: #333;
+  color: white;
+  padding: 0px;
+  margin-left: 3px;
+  font-size: 11px;
+  outline: none;
+  border: 1px solid #555;
+  box-shadow: none;
+  border-radius: 5px;
+}
+
+.category-bar select:focus {
+  outline: none;
+  border-color: #888;
+  box-shadow: none;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  justify-content: flex-end;
+}
+
+.add-button {
+  color: white;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.close-button {
+  color: white;
+  background-color: #333;
+  border: 1px solid #555;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 11px;
+  margin-left: 1px;
+}
