@@ -15,9 +15,14 @@ const AddTitleModal = ({
         <input
           type="text"
           value={newTitle}
-          onChange={(e) => setNewTitle(e.target.value)}
+          onChange={(e) => {
+            if (e.target.value.length <= 10) {
+              setNewTitle(e.target.value);
+            }
+          }}
           className="title-input"
           placeholder="新しいタイトルを入力"
+          maxLength={10}
         />
 
         {/* カテゴリ選択を追加 */}

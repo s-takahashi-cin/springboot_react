@@ -272,14 +272,14 @@ const Navigation = () => {
 
       <div className="footer">
         <p>Sawa Takahashi</p>
-        <button onClick={handleEditToggle} className="show-edit-button">
-          {activeView === "edit" ? "閉じる" : "編集"}
-        </button>
-        <button onClick={toggleTrashView} className="show-edit-button">
-          {activeView === "trash"
-            ? "ゴミ箱を閉じる"
-            : `🗑️（${trashBox.length}）`}
-        </button>
+        <div className="footer-buttons">
+          <button onClick={handleEditToggle} className="show-edit-button">
+            {activeView === "edit" ? "閉じる" : "編集"}
+          </button>
+          <button onClick={toggleTrashView} className="show-trash-button">
+            {activeView === "trash" ? "閉じる" : `🗑️（${trashBox.length}）`}
+          </button>
+        </div>
       </div>
 
       {activeView === "trash" && (
@@ -289,20 +289,23 @@ const Navigation = () => {
             trashBox.map((item) => (
               <div key={item.id} className="trash-item">
                 <span>{item.title}</span>
-                <button
-                  onClick={() => {
-                    setDeleteIndex(item.id); // item.idを直接セット
-                    setOpenModal("trashDelete");
-                  }}
-                >
-                  完全削除
-                </button>
-                <button
-                  onClick={() => handleRestore(item.id)}
-                  className="restore-button"
-                >
-                  戻す
-                </button>
+                <div className="trash-buttons">
+                  <button
+                    onClick={() => {
+                      setDeleteIndex(item.id); // item.idを直接セット
+                      setOpenModal("trashDelete");
+                    }}
+                    className="final-del-button"
+                  >
+                    完全削除
+                  </button>
+                  <button
+                    onClick={() => handleRestore(item.id)}
+                    className="restore-button"
+                  >
+                    戻す
+                  </button>
+                </div>
               </div>
             ))
           ) : (
